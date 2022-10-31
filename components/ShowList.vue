@@ -25,8 +25,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'ShowList',
   data() {
@@ -38,10 +36,9 @@ export default {
     this.getShows()
   },
   methods: {
-    getShows() {
-      axios.get('https://api.tvmaze.com/shows').then((response) => {
-        this.showList = response.data
-      })
+    async getShows() {
+      const data = await this.$axios.$get('https://api.tvmaze.com/shows')
+      this.showList = data
     },
   },
 }
