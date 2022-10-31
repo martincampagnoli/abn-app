@@ -1,5 +1,5 @@
 <template>
-  <DisplayList />
+  <ShowList />
 </template>
 
 <script lang="ts">
@@ -21,5 +21,4 @@ body {
 .text-gray {
   color: #aaa;
 }
-
 </style>
