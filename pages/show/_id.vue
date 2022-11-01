@@ -1,5 +1,5 @@
 <template>
-  <ShowDetails />
+  <ShowDetails :showInfo="show" />
 </template>
 
 <script>

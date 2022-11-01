@@ -1,7 +1,9 @@
 <template>
   <div class="media align-items-lg-center flex-column flex-lg-row p-3">
     <div class="media-body order-2 order-lg-1">
-      <h5 class="mt-0 font-weight-bold mb-2">{{ show.name }}</h5>
+      <NuxtLink :to="`/show/${show.id}`">
+        <h5 class="mt-0 font-weight-bold mb-2">{{ show.name }}</h5>
+      </NuxtLink>
       <p class="font-italic text-muted mb-0 small">
         <span v-html="`${show.summary.slice(0, textLimit).trim()}...`"></span>
       </p>

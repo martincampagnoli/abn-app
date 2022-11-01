@@ -16,7 +16,7 @@
             v-for="item in showList"
             :key="item.id"
           >
-            <show :show="item" />
+            <Show :show="item" />
           </li>
         </ul>
       </div>
