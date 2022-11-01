@@ -1,5 +1,8 @@
 <template>
-  <ShowList />
+  <div class="mt-5">
+    <Header />
+    <ShowList />
+  </div>
 </template>
 
 <script lang="ts">
