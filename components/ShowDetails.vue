@@ -32,9 +32,13 @@
                                     </div>
                                 </div>
                                 <p class="about" v-html="showInfo.summary"></p>
-                                <div class="cart mt-4 align-items-center"> 
-                                    <Rating :value="showInfo.rating.average" />
-                                </div>
+                                <h6 class="font-weight-bold my-2"> Language: {{ showInfo.language }}</h6>
+                                <Rating :value="showInfo.rating.average" />
+                                <NuxtLink :to="showInfo.officialSite">
+                                    <h6 class="font-weight-bold my-2"> 
+                                        {{ showInfo.officialSite }}
+                                    </h6>
+                                </NuxtLink>
                             </div>
                         </div>
                     </div>
