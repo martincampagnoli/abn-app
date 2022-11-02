@@ -66,7 +66,6 @@ export default {
   },
   computed: {
     filteredShowList() {
-      console.dir(this.ratingValue)
       if (!this.ratingValue) {
         return this.showList
       } else {
