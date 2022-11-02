@@ -17,7 +17,7 @@ export default {
   props: ['value'],
   computed: {
     ratingNumber: function () {
-      return Math.trunc(this.value / 2)
+      return this.value ? Math.trunc(this.value / 2) : 0
     },
   },
 }
