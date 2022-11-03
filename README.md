@@ -1,5 +1,10 @@
 # abn-app
 
+App to display TV shows from the public API [TVmaze](https://www.tvmaze.com/api)  
+Users are able to search TV shows by name, filter them by rating and click on them to see their detailed info in another page.
+
+App is developed using Vue 3 + Nuxt by request. Using Jest to manage unit testing, Bootstrap for styling and Prettier for linting.
+
 ## Build Setup
 
 ```bash
